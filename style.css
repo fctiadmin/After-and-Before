@@ -1,0 +1,53 @@
+.container{
+	position:absolute;
+	top:50%;
+	left:50%;
+	transform:translate(-50%,-50%);
+}
+.btn{
+	background:green;
+	width:200px;
+	position:relative;
+	font-size:22px;
+	color:white;
+	border:none;
+	padding:10px 5px;
+	position:relative;
+	overflow:hidden;
+	
+}
+.btn::before{
+	content:"";
+	position:absolute;
+	border-top:2px solid red;
+	border-left:2px solid red;
+	width:20%;
+	height:50%;
+	top:0;
+	left:0;
+	transition:.3s;
+	
+	
+	
+}
+.btn:hover::before{
+	width:110%;
+	height:110%;
+}
+.btn::after{
+	content:"";
+	position:absolute;
+	border-right:2px solid red;
+	border-bottom:2px solid red;
+	width:20%;
+	height:50%;
+	bottom:0;
+	right:0;
+	transition:.3s;
+	
+	
+}
+.btn:hover::after{
+	width:110%;
+	height:110%;
+}
